@@ -1,6 +1,6 @@
 # Catto & Doggo Classification with Tensorflow
 
-## Hi there,
+## Hi there!
 This classifer was trained on the infamous model: __Xception__ using Transfer Learning. It archieved ~99% accuracy on train set and ~94% on validation set.    
 
 Due to Github's file size limitation, the parameter h5 file and the dataset are not included in this repo. The test the Flask app yourself: 
