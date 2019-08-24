@@ -1,0 +1,93 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catto & Doggo Classifier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+
+  </head>
+  <body>
+
+<section class="hero is-fullheight">
+  
+    <div class="bg-img"></div>
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img href ="/" src="/static/images/coderschool.svg" alt="Logo">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item " href="/">
+                Home
+              </a>
+              <a class="navbar-item" href="/about">
+                About Us
+              </a>
+              <a class="navbar-item" href="/model">
+                Model
+              </a>
+              <span class="navbar-item">
+                <a class="button is-primary is-inverted">
+                  <span style="color: red;font-weight: bold">Github</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+    <div class="hero-body bg-img1"></div>
+      <div class="container has-text-centered bg-text" style="width: 100%">
+          <h1 id='logo'>
+            Catto <span id='vs'>/</span> Doggo
+          </h1>
+          <h2>
+            Classify your furry friends with state-of-the-art algorithms!
+          </h2>
+        <div>
+          <i class="arrow_down"></i>
+          <form action="/classify" method="post" enctype="multipart/form-data" style="margin-top: 30px; width: 80%; text-align: center; margin: auto;">
+            <div class="file has-name is-centered">     
+                <label class="file-label">
+                  <input class="file-input" type="file" id="image" name = "image">
+                  <span class="file-cta">
+                    <span class="file-label">
+                      Upload an image
+                    </span>
+                  </span>
+                  <span class="file-name" id="file-name">
+                    No file chosen
+                  </span>
+
+                </label>
+              </div>
+              <br>
+              <input type="submit" value="Classify" class="button is-danger" name = "image" id="classify_button">
+          </form>
+
+          </div>
+         
+        </div>
+      </div>
+
+  </section>
+
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

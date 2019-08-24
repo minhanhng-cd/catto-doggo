@@ -1,0 +1,85 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catto & Doggo Classifier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+
+  </head>
+  <body>
+
+<section class="hero is-fullheight">
+  
+    <div class="bg-img"></div>
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img href ="/" src="/static/images/coderschool.svg" alt="Logo">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="/">
+                Home
+              </a>
+              <a class="navbar-item" href="/about">
+                About Us
+              </a>
+              <a class="navbar-item is-active is-danger" href="/model">
+                Model
+              </a>
+              <span class="navbar-item">
+                <a class="button is-primary is-inverted">
+                  <span style="color: red;font-weight: bold">Github</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+    <div class="hero-body bg-img4"></div>
+    <div class="container bg-text" style="width: 100%; text-align: left">
+        <div class="columns">
+            <div class="column" style="width: 100%">
+                <h1 id='logo' style="text-align: left; font-size: 4rem">
+                    The Model
+                </h1>
+                <p id="model_des">
+                    This classifer was based on the infamous model: <span style="font-weight: bold">Xception</span> using Transfer Learning.
+                    The train dataset contains <span style="font-weight: bold">12,500 images of cats</span> and <span style="font-weight: bold">12,500 of dogs</span>.
+                    The model archieved ~99% accuracy on train set and ~94% on validation set.    
+                    <br>
+                    <br>
+                    The final Dense layer uses <span style="font-weight: bold">Sigmoid</span> activation function, it returns a probablity of the sample to be a cat.
+                    For that reason, this classifer is <span style="font-weight: bold">only useful to differentiate between dogs and cats</span>.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                </p>
+            </div>
+
+            <div class="column">
+                <img src="/static/images/xception.png" class="pred-img" style="box-shadow:7px 7px 4px rgba(0,0,0,0.25)">
+            </div>
+                
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

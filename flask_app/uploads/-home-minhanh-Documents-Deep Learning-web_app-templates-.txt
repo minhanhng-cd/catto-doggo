@@ -1,0 +1,1 @@
+/home/minhanh/Documents/Deep Learning/web_app/templates/predict.html

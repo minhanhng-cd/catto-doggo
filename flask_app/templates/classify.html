@@ -1,0 +1,93 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catto & Doggo Classifier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+
+  </head>
+  <body>
+
+<section class="hero is-fullheight">
+  
+    <div class="bg-img"></div>
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="/static/coderschool.svg" alt="Logo">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="/">
+                Home
+              </a>
+              <a class="navbar-item" href="/model">
+                Model
+              </a>
+              <a class="navbar-item" href="/about">
+                About Us
+              </a>
+              <span class="navbar-item">
+                <a class="button is-primary is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span style="color: red;font-weight: bold">Github</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+    <div class="hero-body bg-img2"></div>
+      <div class="container has-text-centered bg-text" style="width: 100%">
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <!-- <figure class="image is-1by1"> -->
+              <img class="pred_img" src="{{ url_for('send_file', filename=image_file_name)}}"/>
+            <!-- </figure> -->
+          </div>
+           
+          <div class="column" style="font-size:2.5rem">
+
+            <h1 id ="pred">
+                This is a 
+            </h1>
+
+            <h1 class ="box" style="padding: 0%; width: 10rem; background-color: white" id="label">
+                {{ label }}
+            </h1>
+
+            <h2 style="font-size: 2rem">
+              Confidence: <span style="font-weight: bold; color:whitesmoke;">{{prob}}%</span>
+            </h2>
+            <br>
+            <a href="/" class="button is-danger is-inverted is-outlined" style="font-size:1.5rem">Back to Home</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
