@@ -3,7 +3,7 @@
 ## Hi there!
 This classifer was trained on the infamous model: __Xception__ using Transfer Learning. It archieved ~99% accuracy on train set and ~94% on validation set.    
 
-Due to Github's file size limitation, the parameter h5 file and the dataset are not included in this repo. The test the Flask app yourself: 
+Due to Github's file size limitation, the parameter h5 file and the dataset are not included in this repo. To test the Flask app yourself: 
 - Download the h5 file [here](https://drive.google.com/drive/folders/1wIFV0bjNtdZ6Ul4ataD9W6eo-6PxNxVq?usp=sharing)
 - Save the h5 file to _static_ folder
 - In your terminal, navigate to this folder then type `python3 app.py`
